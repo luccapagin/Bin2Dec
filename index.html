@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/favicon.ico?v=2" type="image/x-icon" />
+    <title>Bin2Dec</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="binary-para-decimal">
+      <div class="container">
+        <h2>Bin2Dec - Converter binário para decimal</h2>
+        <div class="form">
+          <div class="field">
+            <label>
+              <input
+                type="text"
+                class="bin"
+                id="input"
+                autocomplete="off"
+                placeholder="Digite aqui o número binário"
+                maxlength="8"
+              />
+            </label>
+          </div>
+          <div class="field">
+            <label>
+              <input
+                type="text"
+                class="dec"
+                id="output"
+                readonly="true"
+                placeholder="O número decimal aparecerá aqui"
+              />
+            </label>
+          </div>
+          <div class="field btn-field">
+            <button type="button" id="btn">Converter</button>
+          </div>
+
+          <div id="error-msg">
+            <p>Você só deve entrar um número composto por 0s e 1s!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
